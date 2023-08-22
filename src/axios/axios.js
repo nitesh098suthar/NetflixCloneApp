@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL : "https://api.themoviedb.org/3/tv/"
+    baseURL : ""
 });
 
 export default API;
