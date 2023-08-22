@@ -26,7 +26,7 @@ const Header = () => {
             className="bg-red-600 px-2 py-1 rounded-md font-semibold text-white text-sm tracking-wide cursor-pointer mr-10"
           />
         </div>
-      </div>
+      </div>     
     </>
   );
 };
