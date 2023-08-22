@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <div
-        className="flex justify-between items-center p-4 min-h-screen bg-black/10 bg-cover bg-center w-100 h-screen"
+        className="flex justify-between items-center p-4 min-h-screen bg-black/10 bg-cover bg-center w-100"
         style={{
           background: 'url("images/background.jpg")',
           backgroundSize: "cover",
