@@ -8,7 +8,7 @@ const Header = () => {
         className="flex justify-between items-center p-4 min-h-screen bg-black/10 bg-cover bg-center w-100"
         style={{
           background: 'url("images/background.jpg")',
-          backgroundSize: "cover",
+          // backgroundSize: "cover",
         }}
       >
         <div>
