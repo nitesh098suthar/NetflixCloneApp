@@ -1,23 +1,20 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Hero from './components/Home/Hero.jsx'
-import Popular from './components/Cards/Popular.jsx'
+import MajorCard from './components/Cards/MajorCard.jsx'
+import FreqAsk from './components/Home/FreqAsk.jsx'
+import MoreWatch from './components/Home/MoreWatch.jsx'
+import Footer from './components/Home/Footer.jsx'
 
 const App = () => {
   return (
     <>
-    <Router>
-
+ 
       <Hero />
-      <Popular />
+      <MajorCard />
+      <FreqAsk />
+      <MoreWatch />
+      <Footer />
 
-      <Routes>
-        <Route />
-      </Routes>
-    
-    </Router> 
-    
-   
       
     </>
   )
