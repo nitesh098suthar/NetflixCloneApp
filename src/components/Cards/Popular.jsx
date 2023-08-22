@@ -2,6 +2,7 @@ import React from "react";
 // import axios from "../../axios/axios.js";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { imageUrl } from "../../constants/constants";
 
 const Popular = () => {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -20,29 +21,32 @@ const Popular = () => {
     }
   };
 
-  console.log(popularMovies);
+  console.log(popularMovies.poster_path);
+  
 
   useEffect(() => {
     getPopularMovies();
   }, []);
 
+
   return (
     <>
-      <div className="min-h-full bg-black ">
+      <div className="h-[400px] bg-black ">
         <h3 className="text-white text-5xl font-bold text-center py-8">
           Popular Movies
         </h3>
-        <p className="text-white text-center text-xl tracking-wide">
+        <p className="text-white text-center text-xl tracking-wide my-3">
           Here are some popular movies you gonna love it
         </p>
 
-        <div className="flex overflow-x-auto ">
+        <div className="flex" style={{width: "100%", overflowX: "auto"}}>
         {popularMovies.map((ele) => {
           return (
             
-
                 <div className="grid place-items-center">
-                    <div className="h-[180px] bg-white w-[300px] mx-10 my-3"></div>
+                    <div className="h-[200px] bg-white w-[150px] mx-10 my-3">
+                        <img src={`${imageUrl}${ele.poster_path}`} alt="" />
+                    </div>
                     <h1 className="text-white font-bold text-xl tracking-wide">
                         Hero
                     </h1>

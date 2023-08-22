@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <div className=" flex justify-between items-center p-4 relative top-0 left-0 ">
         <div>
-          <img src={logo} alt="image" className="w-[150px] ml-10 " />
+          <img src={logo} alt="image" className="w-[150px] ml-10" />
         </div>
         <div className="">
           <input
